@@ -1,0 +1,8 @@
+package com.jasdhir.springdemo;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SportsConfig2 {
+
+}

@@ -1,0 +1,16 @@
+package com.jasdhir.springdemo;
+
+public class TestAOP {
+	public static void main(String[] args) 
+    {
+ 
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/howtodoinjava/demo/aop/applicationContext.xml");
+        EmployeeManager manager = ( EmployeeManager ) context.getBean("employeeManager");
+ 
+        manager.getEmployeeById(1);
+         
+        manager.createEmployee(new EmployeeDTO());
+         
+        manager.deleteEmployee(100);
+    }
+}

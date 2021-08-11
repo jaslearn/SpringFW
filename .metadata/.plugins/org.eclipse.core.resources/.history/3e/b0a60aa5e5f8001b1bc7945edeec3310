@@ -1,0 +1,10 @@
+package com.jasdhir.springdemo;
+
+public class EmployeeCRUDTransactionAspect
+{
+    public void getEmployeeById(JoinPoint joinPoint)
+    {
+        System.out.println("EmployeeCRUDTransactionAspect.getEmployeeById() : "
+                + joinPoint.getSignature().getName());
+    }
+}
